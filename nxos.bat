@@ -27,7 +27,7 @@ if "%def_arch%" == "x86" (
     set CROSS_COMPILE=x86_64-elf-
     set ARCH=x86
 ) else if "%def_arch%" == "riscv64" (
-    set CROSS_COMPILE=riscv64-unknown-elf-
+    set CROSS_COMPILE=riscv-none-embed-
     set ARCH=riscv64
 ) else (
     echo unknown arch! %def_arch%

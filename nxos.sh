@@ -39,11 +39,11 @@ fi
 # set env
 case $def_arch in 
     "x86")
-        export CROSS_COMPILE=    
+        export CROSS_COMPILE=
         export ARCH=x86
         ;;
     "riscv64")
-        export CROSS_COMPILE=$NXOS_ROOT_DIR/tools/gcc/riscv64-unknown-elf-gcc/bin
+        export CROSS_COMPILE=riscv64-unknown-elf-
         export ARCH=riscv64
         ;;
     *)  echo "unknown arch! " $def_arch

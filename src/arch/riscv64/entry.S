@@ -2,14 +2,13 @@
  * Copyright (c) 2018-2022, BookOS Development Team
  * SPDX-License-Identifier: Apache-2.0
  * 
- * Contains: entry for x86 arch
+ * Contains: entry for riscv64 arch
  * 
  * Change Logs:
  * Date           Author            Notes
- * 2022-2-9       JasonHu           Init
+ * 2022-2-21      JasonHu           Init
  */
 
-.code32
 .text
 .extern __NX_StartC
 

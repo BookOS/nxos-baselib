@@ -2,12 +2,16 @@ sinclude ../scripts/xbuild/env.mk
 
 ARCH		?= x86
 
-ifeq ($(ARCH),x86)
+ifeq ($(ARCH),x86) # x86
+
 CC			:= $(CROSS_COMPILE)gcc -m32
 AS			:= $(CROSS_COMPILE)gcc -m32
 LD			:= $(CROSS_COMPILE)ld -m elf_i386
 
 MCFLAGS		:= -march=i386
+else ifeq ($(ARCH),riscv64) # riscv64
+
+MCFLAGS		:= -march=rv64imafdc -mabi=lp64d -mcmodel=medany
 else
 $(error unsupported arch!)
 endif
