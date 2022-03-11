@@ -12,9 +12,9 @@
 ##
 
 # usage:
-# source nxos.sh [arch]
-# example: source nxos.sh           # x86
-# example: source nxos.sh riscv64   # riscv64
+# source setup.sh [arch]
+# example: source setup.sh           # x86
+# example: source setup.sh riscv64   # riscv64
 
 # supported targe list
 supported_arch="x86 riscv64"

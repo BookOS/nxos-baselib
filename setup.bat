@@ -10,9 +10,9 @@
 ::
 
 :: usage:
-:: nxos.bat [arch]
-:: example: nxos.bat            # x86
-:: example: nxos.bat riscv64    # riscv64
+:: setup.bat [arch]
+:: example: setup.bat            # x86
+:: example: setup.bat riscv64    # riscv64
 
 @echo off
 
