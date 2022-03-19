@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2018-2022, BookOS Development Team
+ * Copyright (c) 2018-2022, NXOS Development Team
  * SPDX-License-Identifier: Apache-2.0
  * 
  * Contains: syscall header
@@ -12,7 +12,7 @@
 #ifndef __NXBASE_CORE_SYSCALL__
 #define __NXBASE_CORE_SYSCALL__
 
-#include <nxbase/types.h>
+#include <nxbase/xbook.h>
 
 #define __NX_SYSCALL_ARG(X) ((NX_UArch)(X))
 
@@ -49,7 +49,7 @@ enum NX_SysApi
 {
     NX_API_DebugLog = 1,     /* 1 */
     NX_API_ProcessExit,
-    NX_API_ProcessExecute,    
+    NX_API_ProcessCreate,    
 };
 
 #endif /* __NXBASE_CORE_SYSCALL__ */

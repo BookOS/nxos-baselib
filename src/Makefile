@@ -28,6 +28,8 @@ X_INCDIRS	:= include
 
 SRC			:= arch/$(ARCH)/
 SRC			+= crt/
+SRC			+= process/
+SRC			+= debug/
 
 TARGET_TYPE	:= static
 NAME		:= nxbase
