@@ -23,4 +23,7 @@
 /* utils header */
 #include <nxbase/utils.h>
 
+/* module header */
+#include <nxbase/vfs.h>
+
 #endif /* __NXBASE_ALL_HEADER__ */

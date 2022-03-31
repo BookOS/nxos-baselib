@@ -31,6 +31,7 @@ SRC			+= crt/
 SRC			+= process/
 SRC			+= debug/
 SRC			+= utils/
+SRC			+= vfs/
 
 TARGET_TYPE	:= static
 NAME		:= nxbase
