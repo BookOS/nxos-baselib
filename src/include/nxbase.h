@@ -21,5 +21,6 @@
 #include <nxbase/debug.h>
 
 /* utils header */
+#include <nxbase/utils.h>
 
 #endif /* __NXBASE_ALL_HEADER__ */

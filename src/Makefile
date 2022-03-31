@@ -11,7 +11,7 @@ LD			:= $(CROSS_COMPILE)ld -m elf_i386
 MCFLAGS		:= -march=i386
 else ifeq ($(ARCH),riscv64) # riscv64
 
-MCFLAGS		:= -march=rv64imafdc -mabi=lp64d -mcmodel=medany
+MCFLAGS		:= -march=rv64imafdc -mabi=lp64d -mcmodel=medany -DNX_CPU_64BIT
 else
 $(error unsupported arch!)
 endif
@@ -30,6 +30,7 @@ SRC			:= arch/$(ARCH)/
 SRC			+= crt/
 SRC			+= process/
 SRC			+= debug/
+SRC			+= utils/
 
 TARGET_TYPE	:= static
 NAME		:= nxbase
