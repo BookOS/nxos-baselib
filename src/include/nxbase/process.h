@@ -15,6 +15,6 @@
 #include <nxbase/xbook.h>
 
 void NX_ProcessExit(int exitCode);
-NX_Error NX_ProcessCreate(char *name, char *path, NX_U32 flags);
+NX_Error NX_ProcessLaunch(char *name, char *path, NX_U32 flags);
 
 #endif  /* __NXBASE_PROCESS__ */
