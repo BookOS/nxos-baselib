@@ -82,6 +82,11 @@ enum NX_SysApi
     NX_API_VfsAccess,
     NX_API_VfsChmod,
     NX_API_VfsStat,             /* 25 */
+    NX_API_HubRegister,
+    NX_API_HubUnregister,
+    NX_API_HubCallParam,
+    NX_API_HubCallParamName,
+    NX_API_HubReturn,           /* 30 */
 };
 
 #endif /* __NXBASE_CORE_SYSCALL__ */

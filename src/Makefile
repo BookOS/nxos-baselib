@@ -32,6 +32,7 @@ SRC			+= process/
 SRC			+= debug/
 SRC			+= utils/
 SRC			+= vfs/
+SRC			+= ipc/
 
 TARGET_TYPE	:= static
 NAME		:= nxbase
