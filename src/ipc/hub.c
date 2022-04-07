@@ -36,3 +36,8 @@ NX_Error NX_HubReturn(NX_Size retVal)
 {
     return NX_Syscall1(NX_API_HubReturn, retVal);
 }
+
+NX_Error NX_HubPoll(NX_HubParam *param)
+{
+    return NX_Syscall1(NX_API_HubPoll, param);
+}

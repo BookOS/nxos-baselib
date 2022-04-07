@@ -87,6 +87,7 @@ enum NX_SysApi
     NX_API_HubCallParam,
     NX_API_HubCallParamName,
     NX_API_HubReturn,           /* 30 */
+    NX_API_HubPoll,
 };
 
 #endif /* __NXBASE_CORE_SYSCALL__ */
