@@ -26,7 +26,7 @@ typedef struct NX_HubParam
     NX_Size args[NX_HUB_PARAM_NR];
 } NX_HubParam;
 
-NX_Error NX_HubRegister(const char *name, NX_Addr callAddr, NX_Size maxClient);
+NX_Error NX_HubRegister(const char *name, NX_Size maxClient);
 NX_Error NX_HubUnregister(const char *name);
 NX_Error NX_HubCallParam(NX_Hub *hub, NX_HubParam *param, NX_Size *retVal);
 NX_Error NX_HubCallParamName(const char *name, NX_HubParam *param, NX_Size *retVal);
