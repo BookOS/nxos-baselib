@@ -19,7 +19,7 @@ typedef struct NX_Hub
     int hubData;
 } NX_Hub;
 
-#define NX_HUB_PARAM_NR 7
+#define NX_HUB_PARAM_NR 8
 typedef struct NX_HubParam
 {
     NX_U32 api;
