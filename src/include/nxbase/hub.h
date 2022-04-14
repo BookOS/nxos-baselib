@@ -34,8 +34,9 @@ NX_Error NX_HubCallParam(NX_Hub *hub, NX_HubParam *param, NX_Size *retVal);
 NX_Error NX_HubCallParamName(const char *name, NX_HubParam *param, NX_Size *retVal);
 NX_Error NX_HubReturn(NX_Size retVal, NX_Error retErr);
 NX_Error NX_HubPoll(NX_HubParam *param);
-NX_Error NX_HubDispatch(NX_HubParam *param, NX_HubHandler handlerTable[], NX_Size tableSize);
+void *NX_HubLocateAddr(void *addr, NX_Size size);
 
+NX_Error NX_HubDispatch(NX_HubParam *param, NX_HubHandler handlerTable[], NX_Size tableSize);
 NX_Error NX_HubLoop(NX_HubHandler handlerTable[], NX_Size tableSize);
 
 #endif  /* __NXBASE_HUB__ */
