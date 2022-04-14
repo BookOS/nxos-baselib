@@ -12,9 +12,9 @@
 #include <nxbase/syscall.h>
 #include <nxbase/hub.h>
 
-NX_Error NX_HubRegister(const char *name, NX_Addr callAddr, NX_Size maxClient)
+NX_Error NX_HubRegister(const char *name, NX_Size maxClient)
 {
-    return NX_Syscall3(NX_API_HubRegister, name, callAddr, maxClient);
+    return NX_Syscall2(NX_API_HubRegister, name, maxClient);
 }
 
 NX_Error NX_HubUnregister(const char *name)
