@@ -42,9 +42,9 @@ NX_Error NX_HubPoll(NX_HubParam *param)
     return NX_Syscall1(NX_API_HubPoll, param);
 }
 
-void *NX_HubLocateAddr(void *addr, NX_Size size)
+void *NX_HubTranslate(void *addr, NX_Size size)
 {
-    return (void *)NX_Syscall2(NX_API_HubLocateAddr, addr, size);
+    return (void *)NX_Syscall2(NX_API_HubTranslate, addr, size);
 }
 
 typedef NX_UArch (*NX_HubHandlerWithArg) (NX_UArch, NX_UArch, NX_UArch, NX_UArch, NX_UArch, NX_UArch, NX_UArch, NX_UArch);
