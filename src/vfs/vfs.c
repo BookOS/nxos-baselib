@@ -47,6 +47,11 @@ NX_U64 NX_VfsWrite(int fd, void * buf, NX_U64 len, NX_Error *outErr)
     return NX_Syscall4(NX_API_VfsWrite, fd, buf, len, outErr);
 }
 
+NX_Error NX_VfsIoctl(int fd, NX_U32 cmd, void *arg)
+{
+   return NX_Syscall3(NX_API_VfsIoctl, fd, cmd, arg);
+}
+
 NX_I64 NX_VfsFileSeek(int fd, NX_I64 off, int whence, NX_Error *outErr)
 {
     return NX_Syscall4(NX_API_VfsFileSeek, fd, off, whence, outErr);
