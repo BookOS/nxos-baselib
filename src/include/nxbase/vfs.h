@@ -111,6 +111,7 @@ int NX_VfsOpen(const char * path, NX_U32 flags, NX_U32 mode, NX_Error *outErr);
 NX_Error NX_VfsClose(int fd);
 NX_U64 NX_VfsRead(int fd, void * buf, NX_U64 len, NX_Error *outErr);
 NX_U64 NX_VfsWrite(int fd, void * buf, NX_U64 len, NX_Error *outErr);
+NX_Error NX_VfsIoctl(int fd, NX_U32 cmd, void *arg);
 NX_I64 NX_VfsFileSeek(int fd, NX_I64 off, int whence, NX_Error *outErr);
 NX_Error NX_VfsFileSync(int fd);
 NX_Error NX_VfsFileChmod(int fd, NX_U32 mode);
