@@ -136,6 +136,7 @@ NX_Error NX_VfsStat(const char * path, NX_VfsStatInfo * st);
 #define NX_FileClose(fd)                        NX_VfsClose(fd)
 #define NX_FileRead(fd, buf, len, outErr)       NX_VfsRead(fd, buf, len, outErr)
 #define NX_FileWrite(fd, buf, len, outErr)      NX_VfsWrite(fd, buf, len, outErr)
+#define NX_FileIoctl(fd, cmd, arg)              NX_VfsIoctl(fd, cmd, arg)
 #define NX_FileSeek(fd, off, whence, outErr)    NX_VfsFileSeek(fd, off, whence, outErr)
 #define NX_FileSync(fd)                         NX_VfsFileSync(fd)
 #define NX_FileChmod(fd, mode)                  NX_VfsFileChmod(fd, mode)
