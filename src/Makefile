@@ -33,6 +33,7 @@ SRC			+= debug/
 SRC			+= utils/
 SRC			+= vfs/
 SRC			+= ipc/
+SRC			+= mman/
 
 TARGET_TYPE	:= static
 NAME		:= nxbase

@@ -90,6 +90,9 @@ enum NX_SysApi
     NX_API_HubPoll,
     NX_API_HubTranslate,
     NX_API_VfsIoctl,
+    NX_API_MemMap,
+    NX_API_MemUnmap,            /* 35 */
+    NX_API_MemHeap,
 };
 
 #endif /* __NXBASE_CORE_SYSCALL__ */

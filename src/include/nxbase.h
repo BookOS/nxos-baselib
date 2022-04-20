@@ -26,5 +26,6 @@
 /* module header */
 #include <nxbase/vfs.h>
 #include <nxbase/hub.h>
+#include <nxbase/mman.h>
 
 #endif /* __NXBASE_ALL_HEADER__ */
