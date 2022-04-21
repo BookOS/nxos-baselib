@@ -14,7 +14,10 @@
 
 #include <nxbase/xbook.h>
 
+#define NX_PROC_FLAG_WAIT_START 0x01
+
 void NX_ProcessExit(int exitCode);
-NX_Error NX_ProcessLaunch(char *name, char *path, NX_U32 flags);
+NX_Error NX_ProcessLaunch(char *name, char *path, NX_U32 flags, int *outPid);
+NX_Error NX_ProcessWait(int pid, int *retCode);
 
 #endif  /* __NXBASE_PROCESS__ */
