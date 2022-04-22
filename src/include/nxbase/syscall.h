@@ -59,7 +59,7 @@ enum NX_SysApi
 {
     NX_API_DebugLog = 1,     /* 1 */
     NX_API_ProcessExit,
-    NX_API_ProcessCreate,    
+    NX_API_ProcessLaunch,    
     NX_API_VfsMount,
     NX_API_VfsUnmount,          /* 5 */
     NX_API_VfsSync,
@@ -93,7 +93,6 @@ enum NX_SysApi
     NX_API_MemMap,
     NX_API_MemUnmap,            /* 35 */
     NX_API_MemHeap,
-    NX_API_ProcessWait,
 };
 
 #endif /* __NXBASE_CORE_SYSCALL__ */
