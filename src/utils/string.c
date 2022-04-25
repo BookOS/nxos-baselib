@@ -203,3 +203,14 @@ unsigned long NX_StrToUL(const char * nptr, char ** endptr, int base)
 
 	return (acc);
 }
+
+char * NX_StrCat(char * strDest , const char * strSrc)
+{
+    char * address = strDest;
+    while (*strDest)
+    {
+        strDest++;
+    }
+    while ((*strDest++ = *strSrc++));
+    return (char* )address;
+}
