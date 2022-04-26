@@ -19,6 +19,7 @@
 #include <nxbase/syscall.h>
 #include <nxbase/process.h>
 #include <nxbase/debug.h>
+#include <nxbase/crt.h>
 
 /* utils header */
 #include <nxbase/utils.h>

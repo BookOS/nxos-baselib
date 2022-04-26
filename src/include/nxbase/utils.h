@@ -59,6 +59,7 @@ char *NX_StrChr(const char *s, int c);
 NX_Size NX_StrCopySafe(char *dest, const char *src, NX_Size len);
 char *NX_StrChrReverse(const char *s, int c);
 unsigned long NX_StrToUL(const char * nptr, char ** endptr, int base);
+char * NX_StrCat(char * strDest , const char * strSrc);
 
 /* (utils) ctype */
 int NX_IsDigit(int c);

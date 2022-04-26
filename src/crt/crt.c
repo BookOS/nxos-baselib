@@ -10,12 +10,20 @@
  */
 
 #include <nxbase/process.h>
+#include <nxbase/utils.h>
 
-extern NX_Error NX_Main(char *cmdline);
+extern NX_Error NX_Main(char *cmdline, char *envline);
 
-void __NX_StartC(long *p)
-{
-    NX_Error err = NX_Main(0);
+void __NX_StartC(NX_Addr *p)
+{    
+    char *cmdline;
+    char *envline;
+
+    char **args = (char **)p;
+
+    cmdline = args[0];
+    envline = args[1];
+    NX_Error err = NX_Main(cmdline, envline);
     NX_ProcessExit(err);
     while (1);
 }
