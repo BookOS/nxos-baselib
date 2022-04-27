@@ -93,6 +93,8 @@ enum NX_SysApi
     NX_API_MemMap,
     NX_API_MemUnmap,            /* 35 */
     NX_API_MemHeap,
+    NX_API_ProcessGetCwd,
+    NX_API_ProcessSetCwd,
 };
 
 #endif /* __NXBASE_CORE_SYSCALL__ */

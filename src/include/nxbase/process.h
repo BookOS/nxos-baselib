@@ -7,6 +7,7 @@
  * Change Logs:
  * Date           Author            Notes
  * 2022-3-19      JasonHu           Init
+ * 2022-4-27      JasonHu           add set/get cwd
  */
 
 #ifndef __NXBASE_PROCESS__
@@ -19,5 +20,8 @@
 
 void NX_ProcessExit(int exitCode);
 NX_Error NX_ProcessLaunch(char *path, NX_U32 flags, int *retCode, char *cmd, char *env);
+
+NX_Error NX_ProcessGetCwd(char * buf, NX_Size length);
+NX_Error NX_ProcessSetCwd(char * buf);
 
 #endif  /* __NXBASE_PROCESS__ */
