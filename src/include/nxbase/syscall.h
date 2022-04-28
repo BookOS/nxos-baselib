@@ -9,8 +9,8 @@
  * 2022-2-9       JasonHu           Init
  */
 
-#ifndef __NXBASE_CORE_SYSCALL__
-#define __NXBASE_CORE_SYSCALL__
+#ifndef __NXBASE_SYSCALL_H__
+#define __NXBASE_SYSCALL_H__
 
 #include <nxbase/xbook.h>
 
@@ -97,4 +97,4 @@ enum NX_SysApi
     NX_API_ProcessSetCwd,
 };
 
-#endif /* __NXBASE_CORE_SYSCALL__ */
+#endif /* __NXBASE_SYSCALL_H__ */

@@ -9,8 +9,8 @@
  * 2021-9-29      JasonHu           Init
  */
 
-#ifndef __XBOOK_TYPES__
-#define __XBOOK_TYPES__
+#ifndef __NXBASE_TYPES_H__
+#define __NXBASE_TYPES_H__
 
 typedef unsigned long long  NX_U64;
 typedef signed long long    NX_I64;
@@ -39,4 +39,4 @@ enum NX_Bool
 };
 typedef enum NX_Bool NX_Bool;
 
-#endif  /* __XBOOK_TYPES__ */
+#endif  /* __NXBASE_TYPES_H__ */

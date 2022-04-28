@@ -9,8 +9,8 @@
  * 2022-3-19      JasonHu           Init
  */
 
-#ifndef __NXBASE_HUB__
-#define __NXBASE_HUB__
+#ifndef __NXBASE_HUB_H__
+#define __NXBASE_HUB_H__
 
 #include <nxbase/xbook.h>
 
@@ -39,4 +39,4 @@ void *NX_HubTranslate(void *addr, NX_Size size);
 NX_Error NX_HubDispatch(NX_HubParam *param, NX_HubHandler handlerTable[], NX_Size tableSize);
 NX_Error NX_HubLoop(NX_HubHandler handlerTable[], NX_Size tableSize);
 
-#endif  /* __NXBASE_HUB__ */
+#endif  /* __NXBASE_HUB_H__ */

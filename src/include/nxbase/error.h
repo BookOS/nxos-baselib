@@ -9,8 +9,8 @@
  * 2021-10-16     JasonHu           Init
  */
 
-#ifndef __XBOOK_ERROR__
-#define __XBOOK_ERROR__
+#ifndef __NXBASE_ERROR_H__
+#define __NXBASE_ERROR_H__
 
 #include <nxbase/defines.h>
 
@@ -61,4 +61,4 @@ NX_INLINE const char *NX_ErrorToString(NX_Error err)
     return __NX_ErrorString[err];
 }
 
-#endif  /* __XBOOK_ERROR__ */
+#endif  /* __NXBASE_ERROR_H__ */

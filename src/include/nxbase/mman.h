@@ -9,8 +9,8 @@
  * 2022-4-20      JasonHu           Init
  */
 
-#ifndef __NXBASE_MMAN__
-#define __NXBASE_MMAN__
+#ifndef __NXBASE_MMAN_H__
+#define __NXBASE_MMAN_H__
 
 #include <nxbase/xbook.h>
 
@@ -22,4 +22,4 @@ void * NX_MemMap(void * addr, NX_Size length, NX_U32 prot, NX_Error * outErr);
 NX_Error NX_MemUnmap(void * addr, NX_Size length);
 void * NX_MemHeap(void * addr, NX_Error * outErr);
 
-#endif  /* __NXBASE_MMAN__ */
+#endif  /* __NXBASE_MMAN_H__ */

@@ -9,8 +9,8 @@
  * 2022-4-1       JasonHu           Init
  */
 
-#ifndef __NXBASE_UTILS__
-#define __NXBASE_UTILS__
+#ifndef __NXBASE_UTILS_H__
+#define __NXBASE_UTILS_H__
 
 #include <nxbase/xbook.h>
 
@@ -67,4 +67,4 @@ int NX_IsSpace(int c);
 int NX_IsUpper(int c);
 int NX_IsAlpha(int c);
 
-#endif  /* __NXBASE_UTILS__ */
+#endif  /* __NXBASE_UTILS_H__ */

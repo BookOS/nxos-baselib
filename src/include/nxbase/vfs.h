@@ -9,8 +9,8 @@
  * 2022-4-1       JasonHu           Init
  */
 
-#ifndef __NXBASE___
-#define __NXBASE___
+#ifndef __NXBASE_VFS_H__
+#define __NXBASE_VFS_H__
 
 #include <nxbase/xbook.h>
 
@@ -153,4 +153,4 @@ NX_Error NX_VfsStat(const char * path, NX_VfsStatInfo * st);
 #define NX_FsChmod(path, mode)                  NX_VfsChmod(path, mode)
 #define NX_FsStat(path, st)                     NX_VfsStat(path, st)
 
-#endif  /* __NXBASE___ */
+#endif  /* __NXBASE_VFS_H__ */
