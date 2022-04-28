@@ -73,15 +73,15 @@
 
 typedef struct NX_VfsStatInfo
 {
-	NX_U64 ino;
-	NX_I64 size;
+	NX_U32 ino;
+	NX_Size size;
 	NX_U32 mode;
-	NX_U64 dev;
+	NX_U32 dev;
 	NX_U32 uid;
 	NX_U32 gid;
-	NX_U64 ctime;
-	NX_U64 atime;
-	NX_U64 mtime;
+	NX_U32 ctime;
+	NX_U32 atime;
+	NX_U32 mtime;
 } NX_VfsStatInfo;
 
 enum NX_VfsDirentTtpe
@@ -98,7 +98,7 @@ enum NX_VfsDirentTtpe
 
 typedef struct NX_VfsDirent
 {
-	NX_U64 off;
+	NX_Offset off;
 	NX_U32 reclen;
 	enum NX_VfsDirentTtpe type;
 	char name[NX_VFS_MAX_NAME];
