@@ -9,11 +9,11 @@
  * 2022-3-19      JasonHu           Init
  */
 
-#ifndef __NXBASE_DEBUG__
-#define __NXBASE_DEBUG__
+#ifndef __NXBASE_DEBUG_H__
+#define __NXBASE_DEBUG_H__
 
 #include <nxbase/xbook.h>
 
 NX_Error NX_DebugLog(char *buf, NX_Size len);
 
-#endif  /* __NXBASE_DEBUG__ */
+#endif  /* __NXBASE_DEBUG_H__ */

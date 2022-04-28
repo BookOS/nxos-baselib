@@ -10,8 +10,8 @@
  * 2022-2-9       JasonHu           Init
  */
 
-#ifndef __NXBASE_ALL_HEADER__
-#define __NXBASE_ALL_HEADER__
+#ifndef __NXBASE_ALL_H__
+#define __NXBASE_ALL_H__
 
 #include <nxbase/xbook.h>
 
@@ -29,4 +29,4 @@
 #include <nxbase/hub.h>
 #include <nxbase/mman.h>
 
-#endif /* __NXBASE_ALL_HEADER__ */
+#endif /* __NXBASE_ALL_H__ */

@@ -9,8 +9,8 @@
  * 2022-4-1       JasonHu           Init
  */
 
-#ifndef __NXBASE___
-#define __NXBASE___
+#ifndef __NXBASE_VFS_H__
+#define __NXBASE_VFS_H__
 
 #include <nxbase/xbook.h>
 
@@ -73,15 +73,15 @@
 
 typedef struct NX_VfsStatInfo
 {
-	NX_U64 ino;
-	NX_I64 size;
+	NX_U32 ino;
+	NX_Size size;
 	NX_U32 mode;
-	NX_U64 dev;
+	NX_U32 dev;
 	NX_U32 uid;
 	NX_U32 gid;
-	NX_U64 ctime;
-	NX_U64 atime;
-	NX_U64 mtime;
+	NX_U32 ctime;
+	NX_U32 atime;
+	NX_U32 mtime;
 } NX_VfsStatInfo;
 
 enum NX_VfsDirentTtpe
@@ -98,7 +98,7 @@ enum NX_VfsDirentTtpe
 
 typedef struct NX_VfsDirent
 {
-	NX_U64 off;
+	NX_Offset off;
 	NX_U32 reclen;
 	enum NX_VfsDirentTtpe type;
 	char name[NX_VFS_MAX_NAME];
@@ -153,4 +153,4 @@ NX_Error NX_VfsStat(const char * path, NX_VfsStatInfo * st);
 #define NX_FsChmod(path, mode)                  NX_VfsChmod(path, mode)
 #define NX_FsStat(path, st)                     NX_VfsStat(path, st)
 
-#endif  /* __NXBASE___ */
+#endif  /* __NXBASE_VFS_H__ */

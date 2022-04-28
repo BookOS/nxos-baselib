@@ -10,8 +10,8 @@
  * 2022-4-27      JasonHu           add set/get cwd
  */
 
-#ifndef __NXBASE_PROCESS__
-#define __NXBASE_PROCESS__
+#ifndef __NXBASE_PROCESS_H__
+#define __NXBASE_PROCESS_H__
 
 #include <nxbase/xbook.h>
 
@@ -24,4 +24,4 @@ NX_Error NX_ProcessLaunch(char *path, NX_U32 flags, int *retCode, char *cmd, cha
 NX_Error NX_ProcessGetCwd(char * buf, NX_Size length);
 NX_Error NX_ProcessSetCwd(char * buf);
 
-#endif  /* __NXBASE_PROCESS__ */
+#endif  /* __NXBASE_PROCESS_H__ */

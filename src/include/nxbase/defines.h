@@ -9,8 +9,8 @@
  * 2022-2-9       JasonHu           Init
  */
 
-#ifndef __NXBASE_DEFINES__
-#define __NXBASE_DEFINES__
+#ifndef __NXBASE_DEFINES_H__
+#define __NXBASE_DEFINES_H__
 
 #define NX_NULL ((void *) 0)
 
@@ -104,4 +104,4 @@
 #define NX_ALIGN(n)            __attribute__((aligned(n)))
 #define NX_PACKED              __attribute__((packed))
 
-#endif  /* __NXBASE_DEFINES__ */
+#endif  /* __NXBASE_DEFINES_H__ */

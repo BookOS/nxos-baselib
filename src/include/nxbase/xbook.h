@@ -9,8 +9,8 @@
  * 2022-3-19      JasonHu           Init
  */
 
-#ifndef __NXBASE_XBOOK__
-#define __NXBASE_XBOOK__
+#ifndef __NXBASE_XBOOK_H__
+#define __NXBASE_XBOOK_H__
 
 #if !defined(__ASSEMBLY__) && !defined(ASSEMBLY) 
 #include <nxbase/defines.h>
@@ -18,4 +18,4 @@
 #include <nxbase/error.h>
 #endif
 
-#endif  /* __NXBASE_XBOOK__ */
+#endif  /* __NXBASE_XBOOK_H__ */
