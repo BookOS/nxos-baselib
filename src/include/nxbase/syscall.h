@@ -95,6 +95,10 @@ enum NX_SysApi
     NX_API_MemHeap,
     NX_API_ProcessGetCwd,
     NX_API_ProcessSetCwd,
+    NX_API_SoltClose,
+    NX_API_SnapshotCreate,      /* 40 */
+    NX_API_SnapshotFirst,
+    NX_API_SnapshotNext,
 };
 
 #endif /* __NXBASE_SYSCALL_H__ */
