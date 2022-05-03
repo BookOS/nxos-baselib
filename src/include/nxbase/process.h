@@ -43,6 +43,8 @@ typedef struct NX_SnapshotThread
     NX_U32 ownerProcessId;
     NX_U32 fixedPriority;
     NX_U32 priority;
+    NX_U32 onCore;        /* thread on which core */
+    NX_U32 coreAffinity;  /* thread would like to run on the core */
     NX_U32 flags;
     char name[NX_THREAD_NAME_LEN];
 } NX_SnapshotThread;
