@@ -17,9 +17,9 @@ $(error unsupported arch!)
 endif
 
 X_CFLAGS	:= $(MCFLAGS) -fno-builtin -fno-stack-protector
-X_CFLAGS	+= -nostdlib -nostdinc
+X_CFLAGS	+= -nostdlib -nostdinc -Wall -O3 -ffunction-sections -fdata-sections -ffreestanding -std=gnu99
 
-X_ACFLAGS	+= $(MCFLAGS)
+X_ACFLAGS	+= $(MCFLAGS) -Wall -O3 -ffunction-sections -fdata-sections -ffreestanding -std=gnu99
 
 X_LDFLAGS 	:= -no-pie -nostartfile -n
 X_LDFLAGS 	+= -nostdlib
