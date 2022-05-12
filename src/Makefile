@@ -34,6 +34,7 @@ SRC			+= utils/
 SRC			+= vfs/
 SRC			+= ipc/
 SRC			+= mman/
+SRC			+= time/
 
 TARGET_TYPE	:= static
 NAME		:= nxbase

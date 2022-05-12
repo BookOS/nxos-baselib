@@ -28,5 +28,6 @@
 #include <nxbase/vfs.h>
 #include <nxbase/hub.h>
 #include <nxbase/mman.h>
+#include <nxbase/clock.h>
 
 #endif /* __NXBASE_ALL_H__ */

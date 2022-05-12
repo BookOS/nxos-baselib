@@ -45,7 +45,7 @@ NX_UArch NX_Syscalls(NX_U32 api,
 #define __NX_Syscall(...) __NX_SYSCALL_DISP(__NX_Syscall, __VA_ARGS__)
 #define NX_Syscall(...) __NX_Syscall(__VA_ARGS__)
 
-#define NX_Syscall0(n, a) __NX_Syscall0(n)
+#define NX_Syscall0(n) __NX_Syscall0(n)
 #define NX_Syscall1(n, a) __NX_Syscall1(n, a)
 #define NX_Syscall2(n, a, b) __NX_Syscall2(n, a, b)
 #define NX_Syscall3(n, a, b, c) __NX_Syscall3(n, a, b, c)
@@ -100,6 +100,7 @@ enum NX_SysApi
     NX_API_SnapshotFirst,
     NX_API_SnapshotNext,
     NX_API_ThreadSleep,
+    NX_API_ClockGetMillisecond,
 };
 
 #endif /* __NXBASE_SYSCALL_H__ */
