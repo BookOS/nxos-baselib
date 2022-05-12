@@ -99,6 +99,7 @@ enum NX_SysApi
     NX_API_SnapshotCreate,      /* 40 */
     NX_API_SnapshotFirst,
     NX_API_SnapshotNext,
+    NX_API_ThreadSleep,
 };
 
 #endif /* __NXBASE_SYSCALL_H__ */

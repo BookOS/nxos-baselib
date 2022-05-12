@@ -70,4 +70,6 @@ NX_Solt NX_SnapshotCreate(NX_U32 snapshotType, NX_U32 flags, NX_Error * outErr);
 NX_Error NX_SnapshotFirst(NX_Solt solt, void * object);
 NX_Error NX_SnapshotNext(NX_Solt solt, void * object);
 
+NX_Error NX_ThreadSleep(NX_UArch microseconds);
+
 #endif  /* __NXBASE_PROCESS_H__ */
