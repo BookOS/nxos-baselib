@@ -7,9 +7,9 @@
 ```shell
 # 1. 设置环境变量 setup [arch]
 setup.bat # windows环境，默认x86
-source setup.bat # linux环境
+source setup.sh # linux环境
 setup.bat riscv64 # windows环境
-source setup.bat riscv64 # linux环境
+source setup.sh riscv64 # linux环境
 # 2. 编译库，生成的库需要用户环境make ulib同步后使用
 make
 ```
