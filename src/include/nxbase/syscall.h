@@ -101,6 +101,8 @@ enum NX_SysApi
     NX_API_SnapshotNext,
     NX_API_ThreadSleep,
     NX_API_ClockGetMillisecond,
+    NX_API_TimeSet,
+    NX_API_TimeGet,
 };
 
 #endif /* __NXBASE_SYSCALL_H__ */

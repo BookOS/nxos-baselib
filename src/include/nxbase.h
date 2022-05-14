@@ -30,5 +30,6 @@
 #include <nxbase/mman.h>
 #include <nxbase/clock.h>
 #include <nxbase/sysinfo.h>
+#include <nxbase/time.h>
 
 #endif /* __NXBASE_ALL_H__ */
