@@ -103,6 +103,11 @@ enum NX_SysApi
     NX_API_ClockGetMillisecond,
     NX_API_TimeSet,
     NX_API_TimeGet,
+    NX_API_ThreadCreate,
+    NX_API_ThreadExit,
+    NX_API_ThreadSuspend,
+    NX_API_ThreadResume,        /* 50 */
+    NX_API_ThreadWait,
 };
 
 #endif /* __NXBASE_SYSCALL_H__ */

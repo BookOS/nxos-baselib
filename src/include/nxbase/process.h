@@ -33,6 +33,8 @@
 #define NX_THREAD_STATE_BLOCKED   3
 #define NX_THREAD_STATE_EXIT      4
 
+#define NX_THREAD_CREATE_SUSPEND 0x01 /* thread create with suspend flag */
+
 typedef int NX_Solt;
 
 typedef struct NX_SnapshotThread
@@ -59,6 +61,12 @@ typedef struct NX_SnapshotProcess
     char exePath[NX_VFS_MAX_PATH]; /* execute path */
 } NX_SnapshotProcess;
 
+typedef struct
+{
+    NX_Size stackSize;
+    NX_U32 schedPriority;
+} NX_ThreadAttr;
+
 void NX_ProcessExit(int exitCode);
 NX_Error NX_ProcessLaunch(char *path, NX_U32 flags, int *retCode, char *cmd, char *env);
 
@@ -71,5 +79,10 @@ NX_Error NX_SnapshotFirst(NX_Solt solt, void * object);
 NX_Error NX_SnapshotNext(NX_Solt solt, void * object);
 
 NX_Error NX_ThreadSleep(NX_UArch microseconds);
+NX_Error NX_ThreadCreate(NX_ThreadAttr * attr, void (*handler)(void *), void * arg, NX_U32 flags, NX_Solt * outSolt);
+void NX_ThreadExit(void);
+NX_Error NX_ThreadSuspend(NX_Solt solt);
+NX_Error NX_ThreadResume(NX_Solt solt);
+NX_Error NX_ThreadWait(NX_Solt solt);
 
 #endif  /* __NXBASE_PROCESS_H__ */
