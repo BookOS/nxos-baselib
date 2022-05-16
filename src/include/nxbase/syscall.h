@@ -108,6 +108,7 @@ enum NX_SysApi
     NX_API_ThreadSuspend,
     NX_API_ThreadResume,        /* 50 */
     NX_API_ThreadWait,
+    NX_API_ThreadTerminate,
 };
 
 #endif /* __NXBASE_SYSCALL_H__ */

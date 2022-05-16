@@ -44,6 +44,11 @@ NX_Error NX_ThreadWait(NX_Solt solt, NX_U32 * exitCode)
     return NX_Syscall2(NX_API_ThreadWait, solt, exitCode);
 }
 
+NX_Error NX_ThreadTerminate(NX_Solt solt, NX_U32 exitCode)
+{
+    return NX_Syscall2(NX_API_ThreadTerminate, solt, exitCode);
+}
+
 NX_Error NX_ThreadAttrInit(NX_ThreadAttr * attr, NX_Size stackSize, NX_U32 schedPriority)
 {
     if (!attr || !stackSize)

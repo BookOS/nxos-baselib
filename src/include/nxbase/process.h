@@ -94,6 +94,8 @@ void NX_ThreadExit(NX_U32 exitCode);
 NX_Error NX_ThreadSuspend(NX_Solt solt);
 NX_Error NX_ThreadResume(NX_Solt solt);
 NX_Error NX_ThreadWait(NX_Solt solt, NX_U32 * exitCode);
+NX_Error NX_ThreadTerminate(NX_Solt solt, NX_U32 exitCode);
+
 NX_Error NX_ThreadAttrInit(NX_ThreadAttr * attr, NX_Size stackSize, NX_U32 schedPriority);
 
 #endif  /* __NXBASE_PROCESS_H__ */
