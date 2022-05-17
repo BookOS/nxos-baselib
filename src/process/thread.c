@@ -36,3 +36,23 @@ NX_Error NX_ThreadWait(NX_Solt solt)
 {
     return NX_Syscall1(NX_API_ThreadWait, solt);
 }
+
+NX_Error NX_ThreadGetId(NX_Solt solt, NX_U32 * outId)
+{
+    return NX_Syscall2(NX_API_ThreadGetId, solt, outId);
+}
+
+NX_U32 NX_ThreadGetCurrentId(void)
+{
+    return NX_Syscall0(NX_API_ThreadGetCurrentId);
+}
+
+NX_Error NX_ThreadGetCurrent(NX_Solt * outSolt)
+{
+    return NX_Syscall1(NX_API_ThreadGetCurrent, outSolt);
+}
+
+NX_Error NX_ThreadGetProcessId(NX_Solt solt, NX_U32 * outId)
+{
+    return NX_Syscall2(NX_API_ThreadGetProcessId, solt, outId);
+}

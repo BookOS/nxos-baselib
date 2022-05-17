@@ -84,5 +84,9 @@ void NX_ThreadExit(void);
 NX_Error NX_ThreadSuspend(NX_Solt solt);
 NX_Error NX_ThreadResume(NX_Solt solt);
 NX_Error NX_ThreadWait(NX_Solt solt);
+NX_Error NX_ThreadGetId(NX_Solt solt, NX_U32 * outId);
+NX_U32 NX_ThreadGetCurrentId(void);
+NX_Error NX_ThreadGetCurrent(NX_Solt * outSolt);
+NX_Error NX_ThreadGetProcessId(NX_Solt solt, NX_U32 * outId);
 
 #endif  /* __NXBASE_PROCESS_H__ */
