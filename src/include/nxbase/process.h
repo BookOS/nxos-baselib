@@ -43,6 +43,8 @@
 
 #define NX_THREAD_DEFAULT_STACK_SZ  8192   /* default thread stack size */
 
+#define NX_TLS_MAX_NR 256 /* max tls count */
+
 typedef int NX_Solt;
 
 typedef struct NX_SnapshotThread
@@ -102,5 +104,12 @@ NX_Error NX_ThreadGetCurrent(NX_Solt * outSolt);
 NX_Error NX_ThreadGetProcessId(NX_Solt solt, NX_U32 * outId);
 
 NX_Error NX_ThreadAttrInit(NX_ThreadAttr * attr, NX_Size stackSize, NX_U32 schedPriority);
+
+int NX_TLsAlloc(void);
+NX_Error NX_TLsFree(int index);
+NX_Error NX_TLsSetValue(int index, void * value);
+void * NX_TLsGetValue(int index);
+void NX_TlsSetExtension(void * data);
+void * NX_TlsGetExtension(void);
 
 #endif  /* __NXBASE_PROCESS_H__ */
