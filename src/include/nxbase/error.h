@@ -61,4 +61,10 @@ NX_INLINE const char *NX_ErrorToString(NX_Error err)
     return __NX_ErrorString[err];
 }
 
+NX_Error * NX_ErrorGetLocation(void);
+
+#define NX_ErrorValue       (*NX_ErrorGetLocation())
+#define NX_ErrorGet()       NX_ErrorValue
+#define NX_ErrorSet(error)  (*NX_ErrorGetLocation() = (error))
+
 #endif  /* __NXBASE_ERROR_H__ */
