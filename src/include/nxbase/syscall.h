@@ -113,6 +113,19 @@ enum NX_SysApi
     NX_API_ThreadGetCurrentId,
     NX_API_ThreadGetCurrent,    /* 55 */
     NX_API_ThreadGetProcessId,
+    NX_API_SemaphoreCreate,
+    NX_API_SemaphoreDestroy,
+    NX_API_SemaphoreWait,
+    NX_API_SemaphoreTryWait,    /* 60 */
+    NX_API_SemaphoreSignal,
+    NX_API_SemaphoreSignalAll,
+    NX_API_SemaphoreGetValue,
+    NX_API_MutexCreate,
+    NX_API_MutexDestroy,        /* 65 */
+    NX_API_MutexAcquire,
+    NX_API_MutexTryAcquire,
+    NX_API_MutexRelease,
+    NX_API_MutexAcquirable,
 };
 
 #endif /* __NXBASE_SYSCALL_H__ */

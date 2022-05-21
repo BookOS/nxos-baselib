@@ -112,4 +112,21 @@ void * NX_TLsGetValue(int index);
 void NX_TlsSetExtension(void * data);
 void * NX_TlsGetExtension(void);
 
+#define NX_MUTEX_ATTR_LOCKED 0x01
+
+NX_Solt NX_MutexCreate(NX_U32 attr);
+NX_Error NX_MutexDestroy(NX_Solt solt);
+NX_Error NX_MutexAcquire(NX_Solt solt);
+NX_Error NX_MutexTryAcquire(NX_Solt solt);
+NX_Error NX_MutexRelease(NX_Solt solt);
+NX_Error NX_MutexAcquirable(NX_Solt solt);
+
+NX_Solt NX_SemaphoreCreate(NX_IArch value);
+NX_Error NX_SemaphoreDestroy(NX_Solt solt);
+NX_Error NX_SemaphoreWait(NX_Solt solt);
+NX_Error NX_SemaphoreTryWait(NX_Solt solt);
+NX_Error NX_SemaphoreSignal(NX_Solt solt);
+NX_Error NX_SemaphoreSignalAll(NX_Solt solt);
+NX_IArch NX_SemaphoreGetValue(NX_Solt solt);
+
 #endif  /* __NXBASE_PROCESS_H__ */
