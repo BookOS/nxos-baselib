@@ -23,6 +23,8 @@
 
 /* utils header */
 #include <nxbase/utils.h>
+#include <nxbase/list.h>
+#include <nxbase/assert.h>
 
 /* module header */
 #include <nxbase/vfs.h>
