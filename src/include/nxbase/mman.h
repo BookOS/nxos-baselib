@@ -22,4 +22,7 @@ void * NX_MemMap(void * addr, NX_Size length, NX_U32 prot, NX_Error * outErr);
 NX_Error NX_MemUnmap(void * addr, NX_Size length);
 void * NX_MemHeap(void * addr, NX_Error * outErr);
 
+int NX_PosixBrk(void * addr);
+void * NX_PosixSbrk(int increment);
+
 #endif  /* __NXBASE_MMAN_H__ */
