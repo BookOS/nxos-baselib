@@ -25,4 +25,9 @@ void * NX_MemHeap(void * addr, NX_Error * outErr);
 int NX_PosixBrk(void * addr);
 void * NX_PosixSbrk(int increment);
 
+void * NX_MemAlloc(NX_Size size);
+void * NX_MemAllocEx(NX_Size number, NX_Size size);
+void * NX_MemReAlloc(void * p, NX_Size size);
+void NX_MemFree(void * ptr);
+
 #endif  /* __NXBASE_MMAN_H__ */
