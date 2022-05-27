@@ -14,22 +14,17 @@
 #define __NXBASE_ALL_H__
 
 #include <nxbase/xbook.h>
-
-/* core header */
 #include <nxbase/syscall.h>
 #include <nxbase/process.h>
 #include <nxbase/debug.h>
 #include <nxbase/crt.h>
-
-/* utils header */
 #include <nxbase/utils.h>
-
-/* module header */
 #include <nxbase/vfs.h>
 #include <nxbase/hub.h>
 #include <nxbase/mman.h>
 #include <nxbase/clock.h>
 #include <nxbase/sysinfo.h>
 #include <nxbase/time.h>
+#include <nxbase/device.h>
 
 #endif /* __NXBASE_ALL_H__ */

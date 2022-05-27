@@ -126,6 +126,10 @@ enum NX_SysApi
     NX_API_MutexTryAcquire,
     NX_API_MutexRelease,
     NX_API_MutexAcquirable,
+    NX_API_DeviceOpen,          /* 70 */
+    NX_API_DeviceRead,
+    NX_API_DeviceWrite,
+    NX_API_DeviceControl,
 };
 
 #endif /* __NXBASE_SYSCALL_H__ */

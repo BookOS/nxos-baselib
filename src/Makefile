@@ -35,6 +35,7 @@ SRC			+= vfs/
 SRC			+= ipc/
 SRC			+= mman/
 SRC			+= time/
+SRC			+= device/
 
 TARGET_TYPE	:= static
 NAME		:= nxbase
