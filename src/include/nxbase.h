@@ -19,6 +19,8 @@
 #include <nxbase/debug.h>
 #include <nxbase/crt.h>
 #include <nxbase/utils.h>
+#include <nxbase/list.h>
+#include <nxbase/assert.h>
 #include <nxbase/vfs.h>
 #include <nxbase/hub.h>
 #include <nxbase/mman.h>
