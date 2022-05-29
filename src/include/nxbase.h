@@ -28,5 +28,6 @@
 #include <nxbase/sysinfo.h>
 #include <nxbase/time.h>
 #include <nxbase/device.h>
+#include <nxbase/signal.h>
 
 #endif /* __NXBASE_ALL_H__ */

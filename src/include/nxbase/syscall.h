@@ -130,6 +130,7 @@ enum NX_SysApi
     NX_API_DeviceRead,
     NX_API_DeviceWrite,
     NX_API_DeviceControl,
+    NX_API_SignalSend,
 };
 
 #endif /* __NXBASE_SYSCALL_H__ */
